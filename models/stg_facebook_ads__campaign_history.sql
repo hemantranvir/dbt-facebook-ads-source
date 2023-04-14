@@ -24,6 +24,7 @@ final as (
     select 
         updated_time as updated_at,
         created_time as created_at,
+        clerk_org_id,
         cast(account_id as {{ dbt.type_bigint() }}) as account_id,
         cast(id as {{ dbt.type_bigint() }}) as campaign_id,
         name as campaign_name,

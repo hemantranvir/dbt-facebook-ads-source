@@ -23,6 +23,7 @@ final as (
     
     select 
         cast(ad_id as {{ dbt.type_bigint() }}) as ad_id,
+        clerk_org_id,
         ad_name,
         adset_name as ad_set_name,
         date as date_day,

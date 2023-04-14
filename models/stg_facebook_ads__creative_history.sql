@@ -26,6 +26,7 @@ final as (
         _fivetran_synced,
         cast(id as {{ dbt.type_bigint() }}) as creative_id,
         cast(account_id as {{ dbt.type_bigint() }}) as account_id,
+        clerk_org_id,
         name as creative_name,
         page_link,
         template_page_link,

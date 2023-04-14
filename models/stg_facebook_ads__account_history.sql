@@ -23,6 +23,7 @@ final as (
     
     select 
         cast(id as {{ dbt.type_bigint() }}) as account_id,
+        clerk_org_id,
         _fivetran_synced,
         name as account_name,
         account_status,

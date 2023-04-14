@@ -23,6 +23,7 @@ final as (
     
     select 
         updated_time as updated_at,
+        clerk_org_id,
         cast(id as {{ dbt.type_bigint() }}) as ad_set_id,
         name as ad_set_name,
         cast(account_id as {{ dbt.type_bigint() }}) as account_id,

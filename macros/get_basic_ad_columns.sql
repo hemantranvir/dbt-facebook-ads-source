@@ -1,6 +1,7 @@
 {% macro get_basic_ad_columns() %}
 
 {% set columns = [
+    {"name": "clerk_org_id", "datatype": dbt.type_string()},
     {"name": "ad_id", "datatype": dbt.type_string()},
     {"name": "ad_name", "datatype": dbt.type_string()},
     {"name": "adset_name", "datatype": dbt.type_string()},
